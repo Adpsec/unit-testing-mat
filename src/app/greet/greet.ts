@@ -1,3 +1,3 @@
 export function greet(saludo: string){
-    return "Welcome" + saludo;
+    return "Welcome " + saludo;
 }
