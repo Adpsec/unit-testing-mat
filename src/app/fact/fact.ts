@@ -1,10 +1,12 @@
 export function fact(n: number){
     if (n == 0) {
-        return 1;
+        var r = 1;
+        return r;
     }
     if (n < 0 || n >= 16) {
-        return 0;
+        var r = 0;
+        return r;
     }
-    const result:number = n * fact(n-1);
-    return result;
+    var r:number = n * fact(n-1);
+    return r;
 }
