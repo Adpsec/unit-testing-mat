@@ -1,14 +1,15 @@
 export function pow(x: number, n:number){
-    if (x > 0 && n == 0) {
-        return 1;
+    var r =1;
+    if(n<0){
+        r=0;
     }
-    if (n < 0){
-        return 0;
+    if(n==0){
+        r=1;
     }
-    let y = x;
-    while (n > 1) {
-        y = x*y;
-        n--;
+    else{
+        for(var i=1; i<=n; i++){
+            r=r*x;
+        }
     }
-    return y;
+    return r;
 }
